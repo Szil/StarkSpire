@@ -1,5 +1,97 @@
-extends layout
+﻿extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .jumbotron
+        .container
+            h2 Plakáttartók, világító dobozok egy helyen.
+            br
+            p Ingyenes kiszállítás Budapesten. 
+            p Igény esetén: összeszerelés - kihelyezés - felszerelés
+    .container
+        .row
+            .col-md-4
+                h2 Plakáttartók
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#plakattartoModal') Részletek
+                div(class='modal fade', id='plakattartoModal', tabindex='-1', role='dialog', aria-labelledby='plakattartoLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='plakattartoLabel') Plakáttartók
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás
+            .col-md-4
+                h2 Kiállitási display
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#kiallitasDisplayModal') Részletek
+                div(class='modal fade', id='kiallitasDisplayModal', tabindex='-1', role='dialog', aria-labelledby='kiallitasDisplayLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='kiallitasDisplayLabel') Kiállitási display
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás
+            .col-md-4
+                h2 Poszterkeretek
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#poszterkeretekModal') Részletek
+                div(class='modal fade', id='poszterkeretekModal', tabindex='-1', role='dialog', aria-labelledby='poszterkeretekLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='poszterkeretekLabel') Poszterkeretek
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás
+        .row
+            .col-md-6
+                h2 Megállitótáblák
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#megallitotablakModal') Részletek
+                div(class='modal fade', id='megallitotablakModal', tabindex='-1', role='dialog', aria-labelledby='megallitotablakLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='megallitotablakLabel') Megállitótáblák
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás
+            .col-md-6
+                h2 Prospektustartók
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#prospektustartokModal') Részletek
+                div(class='modal fade', id='prospektustartokModal', tabindex='-1', role='dialog', aria-labelledby='prospektustartokLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='prospektustartokLabel') Prospektustartók
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás
+        .row
+            .col-md-12
+                h2 Promóciós pult
+                button(type='button', class='btn btn-default', data-toggle='modal', data-target='#promociospultModal') Részletek
+                div(class='modal fade', id='promociospultModal', tabindex='-1', role='dialog', aria-labelledby='promociospultLabel', aria-hidden='true')
+                    .modal-dialog
+                        .modal-content
+                            .modal-header
+                                button(type='button', class='close', data-dismiss='modal', aria-label='Close')
+                                    span(aria-hidden='true') &times;
+                                h4(class='modal-title', id='promociospultLabel') Promóciós pult
+                            .modal-body
+                                p TODO
+                            .modal-footer
+                                button(type='button', class='btn btn-default', data-dismiss='modal') Bezárás

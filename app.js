@@ -6,7 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+//var users = require('./routes/users');
+var about = require('./routes/about');
+var contact = require('./routes/contact');
 
 var app = express();
 
@@ -21,9 +23,13 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use('/bootstrap', express.static(__dirname + '/bower_components/bootstrap/dist/'));
+app.use('/jquery', express.static(__dirname + '/bower_components/jquery/dist/'));
+app.use('/knockout', express.static(__dirname + '/bower_components/knockout/dist/'));
 
 app.use('/', routes);
-app.use('/users', users);
+app.use(about);
+app.use(contact);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
